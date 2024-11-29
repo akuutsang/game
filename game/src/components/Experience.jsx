@@ -40,12 +40,15 @@ export const Experience = () => {
         rotation-y={1.24 * Math.PI}
       />
       <Torii scale={[10, 10, 10]} position={[8, 0, -20]} rotation-y={Math.PI} />
-      <RigidBody colliders={false} type="fixed" position-y={-0.5}>
-        <CylinderCollider args={[1 / 2, 5]} />
-        <mesh scale={[5, 1, 5]} receiveShadow>
-          <cylinderGeometry color="white" />
-        </mesh>
-      </RigidBody>
+      <group position-y={-1}>
+        {/* STAGE */}
+        <RigidBody colliders={false} type="fixed" position-y={-0.5}>
+          <CylinderCollider args={[1 / 2, 5]} />
+          <mesh scale={[5, 1, 5]} receiveShadow>
+            <cylinderGeometry color="white" />
+          </mesh>
+        </RigidBody>
+      </group>
     </>
   );
 };
