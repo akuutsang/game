@@ -10,7 +10,7 @@ function App() {
       <fog attach="fog" args={["#dbecfb", 30, 40]} />
       <Suspense>
         <Physics debug>
-          <Experience />
+          <Experience /> 
         </Physics>
       </Suspense>
     </Canvas>
